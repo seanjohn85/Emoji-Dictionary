@@ -56,14 +56,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhH-gG-GHX">
-                                <rect key="frame" x="166" y="323.5" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhH-gG-GHX">
+                                <rect key="frame" x="166" y="461" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrv-DG-Rvp">
-                                <rect key="frame" x="78" y="214" width="218" height="239"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrv-DG-Rvp">
+                                <rect key="frame" x="78" y="150" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,8 +72,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jhH-gG-GHX" firstAttribute="centerX" secondItem="Gfo-6F-73j" secondAttribute="centerX" id="0k1-4c-lDc"/>
-                            <constraint firstItem="jhH-gG-GHX" firstAttribute="centerY" secondItem="Gfo-6F-73j" secondAttribute="centerY" id="KsO-lM-JLq"/>
                             <constraint firstItem="Rrv-DG-Rvp" firstAttribute="centerY" secondItem="Gfo-6F-73j" secondAttribute="centerY" id="oFy-Nw-7EA"/>
+                            <constraint firstItem="jhH-gG-GHX" firstAttribute="top" secondItem="Rrv-DG-Rvp" secondAttribute="bottom" constant="72" id="xcU-Bf-2UZ"/>
                             <constraint firstItem="Rrv-DG-Rvp" firstAttribute="centerX" secondItem="Gfo-6F-73j" secondAttribute="centerX" id="zkX-Ns-sr1"/>
                         </constraints>
                     </view>
