@@ -41,6 +41,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = emojiArray[indexPath.row]
         return cell
     }
+    //to sent to next screnn
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "nextscreen", sender: emojiArray[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        let des = segue.destination as! SecondViewController
+        
+        des.emoji = sender as! String
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
