@@ -10,56 +10,21 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var emoji = "Noemoji"
+    var emoji = Emoji(pic: "🤢", def: "You Sicko", cat: "smily", origin: 2014)
 
+  
+    @IBOutlet var year: UILabel!
+    @IBOutlet var cat: UILabel!
     @IBOutlet var def: UILabel!
     @IBOutlet var image: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        image.text = emoji
-        
-        if emoji == "🤢" {
-            def.text = "You Sicko"
-        }else if emoji == "😡"{
-            def.text = "Angry Aaron"
-        }else if emoji == "🤡"{
-            def.text = "I'll be you clown"
-        }else if emoji == "👎🏾"{
-            def.text = "Vote No"
-        }else if emoji == "👊🏿"{
-            def.text = "PogBoom"
-        }else if emoji == "✌🏾"{
-            def.text = "Victory Tour"
-        }else if emoji == "💩"{
-            def.text = "I did a Dump"
-        }else if emoji == "😭"{
-            def.text = "Crying your head off"
-        }else if emoji == "🤥"{
-            def.text = "Telling a few porkies"
-        }else if emoji == "😎"{
-            def.text = "Daddy Cool"
-        }else if emoji == "💍"{
-            def.text = "Book the church"
-        }else if emoji == "💉"{
-            def.text = "Give Blood"
-        }else if emoji == "😔"{
-            def.text = "Im so sad"
-        }else if emoji == "👴🏼"{
-            def.text = "Pike"
-        }else if emoji == "👣"{
-            def.text = "Footprints in"
-        }else if emoji == "🤝"{
-            def.text = "Done Deal"
-        }else if emoji == "😘"{
-            def.text = "Love U"
-        }else if emoji == "👫"{
-            def.text = "Lovers"
-        }else if emoji == "🎃"{
-            def.text = "Hollween"
-        }
-        
+        image.text = emoji.pic
+        cat.text = emoji.cat
+        def.text = emoji.def
+        year.text = String(emoji.origin)
         
     }
 
